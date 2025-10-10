@@ -1,5 +1,6 @@
 import argparse
-from api_endpoint import getUserData
+# from api_endpoint import getUserData
+from default_api_endpoint import get_userdata as get
 
 def main():
     parser = argparse.ArgumentParser(description='Will parse CLI for Github User')
@@ -7,7 +8,7 @@ def main():
     parser.add_argument('filter', choices=['commits', 'pull_requests', 'issues', 'all'], default='all', nargs='?')
 
     args = parser.parse_args()
-    userdata = getUserData(args.username)
+    userdata = get(args.username)
     filter = args.filter
 
     for event in userdata:

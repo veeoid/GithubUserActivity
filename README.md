@@ -13,7 +13,7 @@ This project provides a simple way to fetch and display GitHub user activity usi
 ## Run the Script
 Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/GithubUserActivity.git
+    git clone https://github.com/veeoid/GithubUserActivity.git
     cd GithubUserActivity
     python3 main.py <username> [filter]
     ```
